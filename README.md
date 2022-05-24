@@ -3,6 +3,7 @@
 # Commands 
 Create Virtualvenv
 - clone project from git
+- https://github.com/prashanthchaduvala/Clock_project.git
 > after cloning 
 > use below commands
 - python -m venv clock-env
@@ -48,7 +49,6 @@ DATABASES = {
         }
     }
 
- ![Example screenshot](imgage/db.png)
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -99,7 +99,23 @@ Moving to production
 - change the host name ,in settings.py file 
 - ALLOWED_HOSTS = [] => add port number here ex: ALLOWED_HOSTS=[127.0.2.47.200]
 - Db details chnage details , add server db details
+
+## HOST SERVER
 > Uploading your code to PythonAnywhere¶
+> git clone https://github.com/prashanthchaduvala/Clock_project.git
+- mkvirtualenv --python=/usr/bin/python3.8 clock-virtualen
+- pip install django
+- pip install -r requirements.txt
+- assuming your Django settings file is at '/home/pra/clock/clock/settings.py'
 
+- WSGI file
+> import os
+> import sys
 
+> path = '/home/pra/clock'
+> if path not in sys.path:
+    sys.path.insert(0, path)
 
+> os.environ['DJANGO_SETTINGS_MODULE'] = 'clock.settings'
+
+> python manage.py migrate
