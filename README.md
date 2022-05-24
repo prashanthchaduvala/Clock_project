@@ -69,6 +69,7 @@ add third party librarys ,apps  and Database changes,,,,,,
 - Django -3.2.13
 - djangorestframework -3.13.1
 - Python 3.8.10
+- Pandas 0.6.6
 
 
 ## Setup
