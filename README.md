@@ -1,4 +1,4 @@
-# Project Name :: XT-O1-Dynamic
+# Project Name :: Timeclock_Project
 
 # Commands 
 Create Virtualvenv
@@ -35,7 +35,7 @@ There are a couple of ways to install PostgreSQL. One of the easier ways to get 
 add third party librarys ,apps  and Database changes,,,,,,
 >DB settings
 
-DATABASES = {
+> DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': '#',
@@ -59,10 +59,9 @@ DATABASES = {
 
 
 ## General Information
-- This is a UserManagement Application.
-- This application contains diffrent roles
+- This is a TimeClock Application.
 > What is the purpose of your project?
-- working some domain and doing the work as per requirements. 
+- employees to clock in and out, and also for them to check the number of hours worked today, on the current week, and on the current month. 
 
 
 
