@@ -96,7 +96,7 @@ How to run server  use below commands
 Moving to production 
 
 - change the host name ,in settings.py file 
-- ALLOWED_HOSTS = [] => add port number here ex: ALLOWED_HOSTS=[127.0.2.47.200]
+- ALLOWED_HOSTS = [] => add port number here ex: ALLOWED_HOSTS=['00.000.0000.0'']
 - Db details chnage details , add server db details
 
 ## HOST SERVER
